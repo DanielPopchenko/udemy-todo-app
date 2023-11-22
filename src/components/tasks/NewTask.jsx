@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from '../UI/Button';
 
-const NewTask = ({ onAddTask, onDeleteTask }) => {
+const NewTask = ({ onAddTask }) => {
     const [enteredTask, setEnteredTask] = useState('');
 
     const handleChange = (e) => {

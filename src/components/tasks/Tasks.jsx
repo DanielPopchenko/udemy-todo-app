@@ -16,7 +16,10 @@ const Tasks = ({ onAddTask, onDeleteTask, tasks }) => {
                             className="flex items-center justify-between my-4 bg-stone-200 py-2 px-3 rounded-md"
                         >
                             <span>{task.text}</span>
-                            <button className="text-stone-700 hover:text-red-600">
+                            <button
+                                className="text-stone-700 hover:text-red-600"
+                                onClick={() => onDeleteTask(task.taskId)}
+                            >
                                 Delete task
                             </button>
                         </li>

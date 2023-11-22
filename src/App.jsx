@@ -26,7 +26,16 @@ function App() {
         });
     };
 
-    const handleDeleteTask = () => {};
+    const handleDeleteTask = (id) => {
+        console.log(id);
+        setProjectsState((prevState) => {
+            return {
+                ...prevState,
+                // если здесь возвращается true, то оставляем елемент
+                tasks: prevState.tasks.filter((task) => task.taskId !== id),
+            };
+        });
+    };
 
     const handleStartingProject = () => {
         setProjectsState((prevState) => {

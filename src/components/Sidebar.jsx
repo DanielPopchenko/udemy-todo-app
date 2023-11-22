@@ -11,8 +11,8 @@ const Sidebar = ({ onAddingProject, projects, onSelectProject, selectedProjectId
 
             <ul className="mt-8">
                 {projects.map((project) => {
-                    let classes = 'w-full text-left px-2 py-1 rounded-sm my-1  hover:text-stone-200 hover:bg-stone-800';
-
+                    let classes =
+                        'w-full text-left px-2 py-1 rounded-sm my-1  hover:text-stone-200 hover:bg-stone-800';
                     if (project.id === selectedProjectId) {
                         classes += ' bg-stone-800 text-stone-200';
                     } else {
